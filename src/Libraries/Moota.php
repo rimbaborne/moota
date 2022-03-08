@@ -258,7 +258,7 @@ class Moota
             return Cache::get($this->cacheName);
         }
 
-        $response = $this->http->get("bank/{$this->bankId}/mutation", [
+        $response = $this->http->get("mutation?type=CR&bank={$this->bankId}", [
             'headers' => $this->httpHeaders,
             'on_stats' => function (TransferStats $stats) use (&$url) {
                 $url = $stats->getEffectiveUri();
@@ -285,7 +285,7 @@ class Moota
         abort_if($limit < 10, 500, trans('moota::moota.min_limit'));
         abort_if($limit > 20, 500, trans('moota::moota.max_limit.'));
 
-        $response = $this->http->get("bank/{$this->bankId}/mutation/recent/$limit", [
+        $response = $this->http->get("mutation?type=CR&bank={$this->bankId}&per_page=$limit", [
             'headers' => $this->httpHeaders,
             'on_stats' => function (TransferStats $stats) use (&$url) {
                 $url = $stats->getEffectiveUri();
@@ -308,7 +308,7 @@ class Moota
             'method' => __FUNCTION__,
         ]));
 
-        $response = $this->http->get("bank/{$this->bankId}/mutation/search/{$amount}", [
+        $response = $this->http->get("mutation?type=CR&bank={$this->bankId}&amount={$amount}", [
             'headers' => $this->httpHeaders,
             'on_stats' => function (TransferStats $stats) use (&$url) {
                 $url = $stats->getEffectiveUri();
@@ -331,7 +331,7 @@ class Moota
             'method' => __FUNCTION__,
         ]));
         
-        $response = $this->http->get("bank/{$this->bankId}/mutation/search/description/{$description}", [
+        $response = $this->http->get("mutation?type=CR&bank={$this->bankId}&description={$description}", [
             'headers' => $this->httpHeaders,
             'on_stats' => function (TransferStats $stats) use (&$url) {
                 $url = $stats->getEffectiveUri();

@@ -185,3 +185,12 @@ Khusus untuk method `amount()` dan `description()` tidak mendukung fitur cache. 
 ## Lisensi  
 
 MIT.
+
+## Pembaruan API Moota V2 
+
+- Cek profil.
+- Bank yang didaftarkan.
+- Rincian bank terdaftar.
+- Mutasi terakhir.
+- Pencarian mutasi berdasarkan nominal.
+- Pencarian mutasi berdasarkan deskripsi.
