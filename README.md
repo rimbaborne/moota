@@ -194,3 +194,11 @@ MIT.
 - Mutasi terakhir.
 - Pencarian mutasi berdasarkan nominal.
 - Pencarian mutasi berdasarkan deskripsi.
+
+## Instalasi V2
+
+Tambahkan package Moota untuk Laravel dengan menjalankan perintah berikut:
+  
+```
+composer require rimbaborne/moota -vvv
+```

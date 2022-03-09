@@ -5,7 +5,7 @@ return [
      * Set default API host for Moota developer.
      * @link https://app.moota.co/developer/docs#base-url-dan-autentikasi
      */
-    'host' => env('MOOTA_HOST', 'https://app.moota.co/api/v1/'),
+    'host' => env('MOOTA_HOST', 'https://app.moota.co/api/v2/'),
 
     /**
      * Provided token from Moota.
