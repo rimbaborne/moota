@@ -29,7 +29,7 @@
         }
     },
     "require": {
-        "guzzlehttp/guzzle": "^6.3@dev",
+        "guzzlehttp/guzzle": "^7.0",
         "laravel/framework": ">=5.2"
     }
 }
