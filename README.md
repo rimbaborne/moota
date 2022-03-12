@@ -200,5 +200,5 @@ MIT.
 Tambahkan package Moota untuk Laravel dengan menjalankan perintah berikut:
   
 ```
-composer require rimbaborne/moota:dev-master
+composer require rimbaborne/moota
 ```
