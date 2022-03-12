@@ -1,6 +1,6 @@
 <?php
 
-namespace Yugo\Moota\Facades;
+namespace Rimbaborne\Moota\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

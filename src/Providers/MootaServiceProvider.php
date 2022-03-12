@@ -1,9 +1,9 @@
 <?php
 
-namespace Yugo\Moota\Providers;
+namespace Rimbaborne\Moota\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Yugo\Moota\Libraries\Moota;
+use Rimbaborne\Moota\Libraries\Moota;
 
 class MootaServiceProvider extends ServiceProvider
 {

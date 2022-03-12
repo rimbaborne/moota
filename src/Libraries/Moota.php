@@ -12,7 +12,7 @@
  * yang disediakan oleh API Moota.co.
  */
 
-namespace Yugo\Moota\Libraries;
+namespace Rimbaborne\Moota\Libraries;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
